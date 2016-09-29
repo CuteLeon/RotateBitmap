@@ -81,7 +81,7 @@ Public Class ShowStand
         MyGraphics.TranslateTransform(-BitmapRes.Width / 2, -BitmapRes.Height / 2)
         MyGraphics.DrawImage(BitmapRes, 0, 0, BitmapRes.Width, BitmapRes.Height)
         MyGraphics.Dispose()
-
+        GC.Collect()
         Return ReturnBitmap
     End Function
 
